@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Lora;
+  src: url(/Css/Fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* This is the header section */
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  top: 0%;
+  font-family: Lora;
+  font-size: 20px;
+}
+nav.inline-block {
+  margin-left: auto;
+  width: 50%;
+  float: right;
+}
+ul.to-right {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+}
+div.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+
+.nav {
+  width: 73%;
+  padding: 1%;
+  float: right;
+}
+/* This is the header section */
+
+/* This is the hero section */
+.heroImg {
+  height: 600px;
+
+  font-family: Lora;
+}
+.heroImg p {
+  font-size: 20px;
+}
+
+.content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding-top: 2%;
+}
+/* This is the hero section */
+/* This is the skills section */
+.flexContainer {
+  display: table;
+  flex-direction: column;
+  width: 33%;
+  float: left;
+  padding-bottom: 10px;
+  align-content: center;
+  outline: solid black 1px;
+}
+.mySkills {
+  text-align: center;
+  font-family: Lora;
+  display: inline;
+}
+.mySkills h2 {
+  margin-top: 13%;
+  padding-bottom: 20px;
+}
+/* This is the skills section */
+/* This is the work section */
+.gridContainer {
+  display: grid;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  width: 80%;
+  justify-items: center;
+  grid-template-columns: 500px 100px 500px;
+  grid-template-rows: 300px 100px 300px;
+}
+
+.gridAreas {
+  width: 443px;
+  height: 313px;
+  padding-top: 24px;
+  background: rgba(217, 217, 217, 0.3);
+  font: Lora;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.gridAreasTwo {
+  width: 443px;
+  height: 313px;
+  padding-top: 24px;
+  background: rgba(217, 217, 217, 0.3);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font: Lora;
+  font-size: 20px;
+  border-radius: 20px;
+}
+img.imgTwo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 392px;
+  height: 195px;
+}
+
+h2.workTitle {
+  display: inline;
+  text-align: left;
+  padding: 0%;
+  margin: auto;
+  position: relative;
+  left: 250px;
+  top: 100px;
+}
+
+/* This is the work section */
+/* This is the footer section */
+.wrapper {
+  background-color: rgba(217, 217, 217, 0.3);
+  color: black;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+ul.list {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0%;
+  padding-top: 0%;
+}
+
+footer li {
+  display: inline-block;
+  justify-content: space-around;
+  text-align: center;
+  padding-left: 30px;
+  font-family: Lora;
+  font-size: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .mySkills {
+    display: block;
+  }
+
+  .flexContainer {
+    display: block;
+    width: 100%;
+  }
+
+  .gridContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .gridAreas {
+    grid-template-columns: 200px 100px 200px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: -auto;
+  }
+  .gridAreasTwo {
+    width: 100%;
+  }
+
+  .imgTwo {
+    width: 100%;
+    height: auto;
+  }
+
+  .workTitle {
+    text-align: center;
+    left: 0;
+    top: 0;
+    margin: 0;
+  }
+
+  nav.inline-block {
+    width: 100%; /* Full width on mobile */
+  }
+
+  ul.to-right {
+    justify-content: center;
+  }
+}

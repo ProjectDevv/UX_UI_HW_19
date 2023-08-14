@@ -1,0 +1,96 @@
+@import url("https: //fonts.google.com/specimen/Lora?preview.text=lora&preview.text_type=custom&query=lora");
+/* This is the header section */
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  top: 0%;
+}
+nav.inline-block {
+  margin-left: auto;
+  width: 50%;
+  float: right;
+}
+ul.to-right {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+}
+div.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+
+.nav {
+  width: 73%;
+  padding: 1%;
+  float: right;
+}
+/* This is the header section */
+
+/* This is the hero section */
+.heroImg {
+  height: 600px;
+  padding-left: 25px;
+}
+
+.content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding-top: 2%;
+}
+/* This is the hero section */
+/* This is the skills section */
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  outline: red solid 1px;
+}
+
+/* This is the skills section */
+/* This is the footer section */
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #d9d9d9;
+  color: black;
+}
+.wrapper {
+  margin-bottom: -10px;
+}
+
+ul.list {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 37%;
+  text-align: left;
+  padding-top: 15px;
+}
+footer li {
+  display: inline-block;
+  padding-left: 40px;
+  text-align: left;
+}
+footer ul {
+  padding-left: 40px;
+}
+.workArea {
+  outline: red solid 1px;
+}
+.projectTitle {
+  outline: red solid 1px;
+}
+.jobDescription {
+  outline: red solid 1px;
+}
+
+.workArea {
+  padding-left: 17.5%;
+}
+.skills {
+  padding-left: 17.5%;
+}
