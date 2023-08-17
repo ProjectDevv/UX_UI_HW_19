@@ -18,6 +18,11 @@ body {
   top: 0%;
   font-family: Lora;
   font-size: 20px;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  color: black;
 }
 nav.inline-block {
   margin-left: auto;
@@ -41,6 +46,20 @@ div.logo {
   padding: 1%;
   float: right;
 }
+.inline-block:hover {
+  text-decoration: underline;
+}
+a.inline-block{
+  color: black;
+}
+a.button:hover {
+  text-decoration: underline;
+}
+a.inline-block:active {
+  color: #f33434;
+  text-decoration-color: #f33434;
+}
+
 /* This is the header section */
 
 /* This is the hero section */
@@ -65,18 +84,17 @@ div.logo {
 .flexContainer {
   display: table;
   flex-direction: column;
-  width: 33%;
   float: left;
   padding-bottom: 10px;
   align-content: center;
   outline: solid black 1px;
 }
-.mySkills {
+#mySkills {
   text-align: center;
   font-family: Lora;
   display: inline;
 }
-.mySkills h2 {
+#mySkills h2 {
   margin-top: 13%;
   padding-bottom: 20px;
 }

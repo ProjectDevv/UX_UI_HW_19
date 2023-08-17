@@ -13,10 +13,10 @@
       </div>
       <nav class="inline-block">
         <ul class="to-right">
-          <li class="inline-block">About</li>
-          <li class="inline-block">Work</li>
-          <li class="inline-block">Skill</li>
-          <li class="inline-block">Contact</li>
+          <li ><a href="#about" class="inline-block" role="button">About</a></li>
+          <li ><a href="#work" id ="workZone" class="inline-block" role="button">Work</a></li>
+          <li><a href="#skills" id ="skillZone" class="inline-block" role="button">Skill</a></li>
+          <li><a href="#" class="inline-block" role="button">Resume</a></li>
         </ul>
       </nav>
     </header>
@@ -36,7 +36,7 @@
       <!-- This is the heroimg section -->
       <!--                                          -->
     <!-- This is the skills section -->
-      <section class="mySkills">
+      <section id="mySkills">
         <h2>My UX Skills</h2>
         <div class ="flexContainer">
           <img src="/Images/programming.png"width="100" height="100" />
@@ -57,9 +57,10 @@
 <!-- This is the skills section -->
 <!--                                          -->
 <!-- This is the work section -->
- <h2 class="workTitle">Selected Work</h2>
+ <h2 class="workTitle"id="workArea">Selected Work</h2>
+ 
       <section class="gridContainer">
-          <div class="gridAreas">
+          <div class="gridAreas ">
                <img class="imgTwo" src="Images/GreenSteps 1.png"width="392px" height="195">
             <h4 class="projectTitle">Green Steps</h4>
             <p class="jobDescription">UX/UI Designer</p>
@@ -78,7 +79,7 @@
     <section class="wrapper">
     <footer class="bottom">
       <ul class="list">
-        <li class="inline-block">About</li>
+        <li ><a href="#" class="inline-block" role="button">About</a> </li>
         <li class="inline-block">Work</li>
         <li class="inline-block">Skill</li>
         <li class="inline-block">Contact</li>
@@ -86,5 +87,6 @@
     </footer>
   </section>
   <!-- This is the footer section -->
- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script src="js/index.js"></script>
 </html>
