@@ -84,6 +84,7 @@ a.inline-block:active {
 .flexContainer {
   display: table;
   flex-direction: column;
+  width: 100%;
   float: left;
   padding-bottom: 10px;
   align-content: center;
@@ -150,6 +151,15 @@ h2.workTitle {
   left: 250px;
   top: 100px;
 }
+h4{
+  margin-left: 4px;
+}
+.gridContainer p{
+  margin-left: 4px;
+}
+.jobDescription p{
+  margin-left: 4px;
+}
 
 /* This is the work section */
 /* This is the footer section */
@@ -157,7 +167,7 @@ h2.workTitle {
   background-color: rgba(217, 217, 217, 0.3);
   color: black;
   padding: 15px;
-  text-align: center;
+  text-align: center; width: 100%;
   width: 100%;
 }
 
@@ -186,23 +196,25 @@ footer ul {
   position: relative;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query*/
 @media only screen and (max-width: 600px) {
   body {
     font-size: 16px;
   }
 
-  .mySkills {
-    display: block;
-  }
 
   .flexContainer {
-    display: block;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-bottom: 10px;
+    outline: solid black 1px;
+     width: 100%;
   }
-
   .gridContainer {
-    display: grid;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -215,6 +227,7 @@ footer ul {
     grid-column-start: 1;
     grid-column-end: -auto;
   }
+
   .gridAreasTwo {
     width: 100%;
   }
@@ -232,10 +245,11 @@ footer ul {
   }
 
   nav.inline-block {
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
   }
 
   ul.to-right {
     justify-content: center;
   }
 }
+
